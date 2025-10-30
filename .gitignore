@@ -55,10 +55,15 @@ server/.cache/
 .idea/
 *.iml
 
+# ---Widgets---
+client/your-extensions/
+
 # --- Outros ---
 .sass-cache/
 .nyc_output/
 .browserslistrc-backup
+
+
 
 # Não ignore arquivos de lock por padrão; são úteis para builds reprodutíveis
 # (yarn.lock / package-lock.json / pnpm-lock.yaml)
