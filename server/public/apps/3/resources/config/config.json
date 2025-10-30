@@ -1,0 +1,274 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Página"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "85.8%",
+            "right": "9.2%",
+            "top": "17.3%",
+            "bottom": "76.4%",
+            "width": "5.0%",
+            "height": "6.3%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "1"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    }
+  },
+  "exbVersion": "1.18.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.18.0",
+      "label": "Mapa",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canMeasure": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null,
+        "scaleRange": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/measurement-enhanced/",
+      "version": "1.0.0",
+      "label": "Measurement Enhanced",
+      "config": {
+        "enableDistance": true,
+        "defaultDistanceUnit": "metric",
+        "enableArea": true,
+        "defaultAreaUnit": "metric",
+        "arrangement": "CLASSIC"
+      },
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_3": {
+      "uri": "widgets/common/controller/",
+      "version": "1.18.0",
+      "label": "Controlador de Widget",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_3",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_2"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://tecgeo.maps.arcgis.com"
+  },
+  "timestamp": 1761755357943,
+  "sharedThemeVariables": null,
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "WebMap SIG Cuité",
+      "itemId": "407ad072a27c48afb7dcecc0f0f90d3b",
+      "portalUrl": "https://tecgeo.maps.arcgis.com"
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ]
+}

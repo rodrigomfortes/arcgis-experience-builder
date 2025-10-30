@@ -1,0 +1,64 @@
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+# --- Ambiente ---
+.env
+.env.local
+.env.*.local
+*.local
+
+# --- Node/JS ---
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.temp/
+.tmp/
+.eslintcache
+
+# --- Testes/Relatórios ---
+.cypress/
+playwright-report/
+test-results/
+
+# --- ArcGIS Experience Builder ---
+# Ajuste conforme a sua estrutura real de pastas
+client/dist/
+client/temp/
+client/.cache/
+server/dist/
+server/temp/
+server/.cache/
+
+# Extensões geradas/compiladas (se houver)
+**/output/
+**/.output/
+
+# --- IDE/Editor ---
+.vscode/
+.idea/
+*.iml
+
+# --- Outros ---
+.sass-cache/
+.nyc_output/
+.browserslistrc-backup
+
+# Não ignore arquivos de lock por padrão; são úteis para builds reprodutíveis
+# (yarn.lock / package-lock.json / pnpm-lock.yaml)

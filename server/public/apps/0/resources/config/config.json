@@ -1,0 +1,227 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "AUTO_SCROLL",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Página"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FLOW",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "319px",
+            "right": "619px",
+            "top": "152px",
+            "bottom": "352px",
+            "width": "300px",
+            "height": 581
+          },
+          "setting": {
+            "heightMode": "fixed"
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 0,
+            "width": 4,
+            "height": 197.7777862548828
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 4,
+            "width": 3,
+            "height": 197.7777862548828
+          }
+        }
+      },
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "2",
+        "1"
+      ]
+    },
+    "layout_2": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": []
+    }
+  },
+  "exbVersion": "1.18.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankscrollable",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/row/",
+      "version": "1.18.0",
+      "label": "Bloquear",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_1"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/street-view-compliant-widget/",
+      "version": "1.0.0",
+      "label": "Street View (Compliant Hiperlink)",
+      "config": {
+        "useMapWidgetIds": []
+      },
+      "id": "widget_2"
+    },
+    "widget_3": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.18.0",
+      "label": "Mapa",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_3",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_2"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://tecgeo.maps.arcgis.com"
+  },
+  "timestamp": 1759777721923,
+  "sharedThemeVariables": null,
+  "dataSources": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ]
+}

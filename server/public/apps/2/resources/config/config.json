@@ -1,0 +1,257 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Página"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "GRID",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "gridType": 3,
+          "bbox": {
+            "width": 100
+          },
+          "expandable": true
+        }
+      },
+      "order": [],
+      "setting": {
+        "rootItem": "0"
+      }
+    },
+    "layout_1": {
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "bbox": {
+            "left": "80.4%",
+            "right": "15.2%",
+            "top": "37.2%",
+            "bottom": "57.1%",
+            "width": "4.4%",
+            "height": "5.7%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "1"
+      ]
+    },
+    "layout_4": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    }
+  },
+  "exbVersion": "1.18.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreengrid",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.18.0",
+      "label": "Mapa",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null,
+        "scaleRange": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/street-view-widget/",
+      "version": "1.0.0",
+      "label": "Google Street View",
+      "config": {
+        "googleApiKey": ""
+      },
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_5": {
+      "uri": "widgets/common/controller/",
+      "version": "1.18.0",
+      "label": "Controlador de Widget",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_5",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_4"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "attributes": {
+    "portalUrl": "https://tecgeo.maps.arcgis.com"
+  },
+  "timestamp": 1761769535613,
+  "sharedThemeVariables": null,
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "WebMap SIG Cuité",
+      "itemId": "407ad072a27c48afb7dcecc0f0f90d3b",
+      "portalUrl": "https://tecgeo.maps.arcgis.com"
+    }
+  }
+}

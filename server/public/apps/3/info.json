@@ -1,0 +1,23 @@
+{
+  "created": 1760560599671,
+  "description": "",
+  "id": "3",
+  "modified": 1761755358829,
+  "owner": "Tecgeo",
+  "tags": [],
+  "thumbnail": null,
+  "title": "MeasuresWidget",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Draft",
+    "version:1.18.0"
+  ],
+  "portalUrl": "https://tecgeo.maps.arcgis.com",
+  "username": "Tecgeo",
+  "name": "MeasuresWidget",
+  "isLocalApp": true
+}
