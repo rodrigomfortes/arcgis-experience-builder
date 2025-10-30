@@ -39,12 +39,12 @@ test-results/
 
 # --- ArcGIS Experience Builder ---
 # Ajuste conforme a sua estrutura real de pastas
-client/dist/
-client/temp/
-client/.cache/
-server/dist/
-server/temp/
-server/.cache/
+# client/dist/
+# client/temp/
+# client/.cache/
+# server/dist/
+# server/temp/
+# server/.cache/
 
 # Extensões geradas/compiladas (se houver)
 **/output/
